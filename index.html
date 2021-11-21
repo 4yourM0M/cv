@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Мій сайт</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+    <style media="screen">
+        /* стилізую горизонтальну лінію за допомогою internal CSS */
+        hr {
+            height: 5px;
+            /* висота лінії */
+            border: none;
+            /* змінив усі стилі за замовчуванням на ніякі, щоб задати свої */
+            border-width: 0 0 5px;
+            /* задав ширину лінії */
+            border-style: dotted;
+            /* задав стиль лінії */
+            width: 70%;
+            /* задав довжину лінії */
+            color: rgb(161, 29, 29);
+        }
+
+        p {
+            font-family: monospace;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+
+<body style="background-color:lavender;">
+    <!-- стилізую body за допомогою inline CSS, змінила фон сайту  -->
     <center>
-    <table>
-      <tr>
-        <td width= 300px><img src="xxtenations-1.png" width="100"></td>
-        <td>
-            <h1>Сторінка Молодецького Володимира Олександровича</h1>
-            <p>
-                <em>Студент 2 курсу НАУ</em>, факультет ФККПІ, <strong>група БІ-242</strong>
-            </p>
-        </td>
-      </tr>
-    </table>
+        <table>
+            <tr>
+                <td align="left"><img src="xxtenations-1.jpg" width="100"></td>
+                <td align="right">
+                    <h1 style="color: indigo;" id="color_id" class="color_c">Сторінка Молодецького Володимира Олександровича</h1>
+                    <p style="color: red;">
+                        <!-- змінив колір -->
+                        <em>Студент 2 курсу НАУ</em>, факультет ФККПІ, <strong>група БІ-242</strong>
+                    </p>
+                </td>
+            </tr>
+        </table>
     </center>
+    <hr>
     <center>
-        <h1>Про себе</h1>
-        <p>До навчання в НАУ я закінчив ліцей у свому рідному місті Житомир. Під час навчання приймав велику участь у навчальному процесі та приймав учать у гуртках.</p>
+        <h1 class="line color_c">Про себе</h1>
+        <p>До навчання в НАУ я закінчив ліцей у своєму рідному місті Житомир. Під час навчання приймав велику участь у
+            навчальному процесі та приймав учать у гуртках.</p>
         <p>Маю багато хобі а саме: малювання, багато читаю та займаюсь спортом</p>
     </center>
     <center>
-    <h1>Scills</h1>
-    <table>
-      <tr>
-        <td>
-            <ul>
-              <li>HTML★★★☆☆</li>
-              <li>Python★★★☆☆</li>
-              <li>C++★★★★☆</li>
-              <li>C★★★★☆</li>
-              <li>PHP☆☆☆☆☆</li>
-            </ul>
-        </td>
-        <td>
-          <ul>
-            <li>CSS★★★☆☆</li>
-            <li>RUBY★★★☆☆</li>
-            <li>Java★★☆☆☆</li>
-            <li>JS★☆☆☆☆</li>
-            <li>R★☆☆☆☆</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td width=50%>
-          <center>
-            <h3><em>Мої контакні дані</em></h3>
-            <p>Номер телефону: <strong>380674110234</strong></p>
-            <p>Електронна пошта: <strong>vovterer@gmail.com</strong></p>
-          </center>
-        </td>
-        <td width=50%>
-          <center>
-          <h3><em><a href="contact.html">Мої контакти</a></em></h3>
-          <p><strong><a href="main.html" style="margin-left:10px;">Мої захоплення</a></strong></p>
-          </center>
-        </td>
-      </tr>
-    </table>
-  </center>
-  </body>
+        <h1 class="line">Scills</h1>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>HTML★★★☆☆</li>
+                        <li>Python★★★☆☆</li>
+                        <li>C++★★★★☆</li>
+                        <li>C★★★★☆</li>
+                        <li>PHP☆☆☆☆☆</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>CSS★★★☆☆</li>
+                        <li>RUBY★★★☆☆</li>
+                        <li>Java★★☆☆☆</li>
+                        <li>JS★☆☆☆☆</li>
+                        <li>R★☆☆☆☆</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td width=50%>
+                    <center>
+                        <h3><em>Мої контакні дані</em></h3>
+                        <p>Номер телефону: <strong>380674110234</strong></p>
+                        <p>Електронна пошта: <strong>vovterer@gmail.com</strong></p>
+                    </center>
+                </td>
+                <td width=50%>
+                    <center>
+
+
+                        <button type="button">
+                            <em><strong><a href="contact.html">Мої контакти</a></strong></em>
+                        </button>
+                        <br><br>
+                        <button>
+                            <strong><a href="main.html" style="margin-left:10px;">Мої захоплення</a></strong>
+                        </button>
+
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
 </html>
