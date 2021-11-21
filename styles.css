@@ -1,0 +1,85 @@
+h1 {
+    background-color: aliceblue;
+}
+
+/* для всіх заголовків типу h1 задав колір заднього фону */
+li {
+    font-weight: 600;
+}
+
+/* для всіх тегів li задав жирність тексту */
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+/* дана стилізація змінить тільки сторінку контакти, бо в інших body уже застилізовані до того ж вищим пріорітетом css */
+
+/* Завдання 4.1 */
+/* Змінив заголовок типу <h1> та елемент лінку <a> через тег */
+h1 {
+    font-family: fantasy;
+    font-weight: lighter;
+}
+
+/* задав жирість та шрифт тексту */
+
+form {
+    background-image: url(./background28.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* На сторінці Мої контакти додав фото на задній фон форми відправки листа  */
+
+a {
+    text-decoration: mediumblue wavy underline;
+}
+
+/* додав декорації до лінку -> хвилясту синю лінію під текстом */
+
+
+/* Змінив також заголовок типу h1 через клас, 
+але застилізувались тільки ті заголовки, де я додав цей клас(line) */
+.line {
+    line-height: 60px;
+    padding-left: 5px;
+}
+
+/* задав висоту елементу та відступ вліво */
+
+/*  Змінив заголовок типу h3 через ідентифікатор */
+#information_about_me {
+    background-color: aliceblue;
+    width: 50%;
+    font-variant: small-caps slashed-zero;
+}
+
+/* Змінив задній колір елементу, стиль тексту та задав ширину */
+
+/*  Застилізував заголовок типу h2 через псевдоклас */
+h2:hover {
+    background-color: aliceblue;
+}
+
+/* при наведені курсиву буде змінено задній фон елемента */
+
+button {
+    height: 30px;
+    width: 150px;
+}
+
+a {
+    color: inherit;
+}
+
+/* Специфікація */
+
+h1{
+    color: red;
+}
+.color_c{
+    color: blue;
+}
+#color_id{
+    color: deepskyblue;
+}
