@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Мій сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- задав адаптивність сайту -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img2.jpg">
+    <!-- іконка перед назвою сайту -->
     <style media="screen">
         /* стилізую горизонтальну лінію за допомогою internal CSS */
         hr {
@@ -23,6 +27,7 @@
 
         p {
             font-family: monospace;
+            /* шрифт */
             font-size: 18px;
         }
     </style>
@@ -31,77 +36,132 @@
 
 <body style="background-color:lavender;">
     <!-- стилізую body за допомогою inline CSS, змінила фон сайту  -->
-    <center>
-        <table>
-            <tr>
-                <td align="left"><img src="xxtenations-1.png" width="100"></td>
-                <td align="right">
-                    <h1 style="color: indigo;" id="color_id" class="color_c">Сторінка Молодецького Володимира Олександровича</h1>
-                    <p style="color: red;">
-                        <!-- змінив колір -->
-                        <em>Студент 2 курсу НАУ</em>, факультет ФККПІ, <strong>група БІ-242</strong>
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </center>
+    <header>
+        <center>
+            <table>
+                <tr>
+                    <td align="left"><img src="xxtenations-1.jpg" width="100"></td>
+                    <td align="right">
+                        <h1 style="color: indigo;" id="color_id" class="color_c">Сторінка Молодецького Володимира
+                            Олександровича</h1>
+                        <p style="color: red;">
+                            <!-- змінив колір -->
+                            <em>Студент 2 курсу НАУ</em>, факультет ФККПІ, <strong>група БІ-242</strong>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </header>
+    <!-- на лекціях я ознайомився із flow content elements, згідно завдання додав заголовок в елемент HTML <header>, який представляє 
+        вступний вміст, як правило, групу вступних або навігаційних засобів. Він може містити деякі елементи заголовка, але 
+        також логотип, форму пошуку, ім’я автора та інші елементи.  -->
     <hr>
+    <section>
+        <center>
+            <h1 class="line color_c">Про себе</h1>
+            <div
+                style="width: 50%; border-left: 12px double mediumslateblue; border-right: 12px double mediumslateblue;
+                padding: 0px 10px 0px 10px; margin-top: -10px; margin-bottom: -10px; font-family: monospace; font-size: 18px;">
+                До навчання в НАУ я закінчив ліцей у своєму рідному місті Житомир. Під час навчання приймав велику
+                участь у навчальному процесі та приймав учать у гуртках.</div>
+            <!-- змінив <p> елемент на <div>, щоб продемонстувати цей елемент -->
+            <!-- розмістив цей елемент на 50% ширини сторінки, задав ліву та праву границю, padding та margin
+                та додав стилі, що були додані раніше до елементу <p> -->
+            <p>Маю багато хобі а саме: малювання, багато читаю та займаюсь спортом.</p>
+        </center>
+    </section>
+    <!-- на свій розсуд розмістив елементи по розділах, так як елемент <section> HTML представляє загальний окремий розділ документа, 
+            який не має більш конкретного семантичного елемента для його представлення. Розділи завжди повинні мати заголовок, 
+            за дуже невеликими винятками.-->
     <center>
-        <h1 class="line color_c">Про себе</h1>
-        <p>До навчання в НАУ я закінчив ліцей у своєму рідному місті Житомир. Під час навчання приймав велику участь у
-            навчальному процесі та приймав учать у гуртках.</p>
-        <p>Маю багато хобі а саме: малювання, багато читаю та займаюсь спортом</p>
-    </center>
-    <center>
-        <h1 class="line">Scills</h1>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li>HTML★★★☆☆</li>
-                        <li>Python★★★☆☆</li>
-                        <li>C++★★★★☆</li>
-                        <li>C★★★★☆</li>
-                        <li>PHP☆☆☆☆☆</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>CSS★★★☆☆</li>
-                        <li>RUBY★★★☆☆</li>
-                        <li>Java★★☆☆☆</li>
-                        <li>JS★☆☆☆☆</li>
-                        <li>R★☆☆☆☆</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <section>
+            <h1 class="line">Scills</h1>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">HTML★★★☆☆
+                            </li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">Python★★★☆☆
+                            </li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">C++★★★★☆</li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">C★★★★☆</li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">PHP☆☆☆☆☆</li>
+                            <!-- задав до <li> рядково-блочне значення елементів, що означає, що ці елементи тепер блочні 
+                                та розміщуються в один ряд, також за допомогою margin зробив відступи після елементів справа  -->
+                            <!-- також я додав нову властивість(стиль) - box-sizing: border-box (за замовчуванням content-box)
+                            Суть цього стилю полягає в тому, що заданий розмір елемента буде зберігатись не враховуючи марджіни, 
+                            границі та педдінги -->
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">CSS★★★☆☆</li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">RUBY★★★☆☆
+                            </li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">Java★★☆☆☆
+                            </li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">JS★☆☆☆☆</li>
+                            <li style="display: inline-block; margin-right: 10px; box-sizing: border-box;">R★☆☆☆☆</li>
+                            <!-- задав до <li> рядково-блочне значення елементів, що означає, що ці елементи тепер блочні 
+                                та розміщуються в один ряд, також за допомогою margin зробив відступи після елементів справа  -->
+                            <!-- також я додав нову властивість(стиль) - box-sizing: border-box (за замовчуванням content-box)
+                            Суть цього стилю полягає в тому, що заданий розмір елемента буде зберігатись не враховуючи марджіни, 
+                            границі та педдінги -->
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!-- загальний окремий розділ сторінки. -->
         <table>
             <tr>
                 <td width=50%>
-                    <center>
-                        <h3><em>Мої контакні дані</em></h3>
-                        <p>Номер телефону: <strong>380674110234</strong></p>
-                        <p>Електронна пошта: <strong>vovterer@gmail.com</strong></p>
-                    </center>
+                    <section>
+                        <center>
+                            <h3><em>Мої контакні дані</em></h3>
+                            <p>Номер телефону: <strong>380674110234</strong></p>
+                            <p>Електронна пошта: <strong>vovterer@gmail.com</strong></p>
+                        </center>
+                    </section>
+                    <!-- загальний окремий розділ сторінки. -->
                 </td>
                 <td width=50%>
-                    <center>
-
-
-                        <button type="button">
-                            <em><strong><a href="contact.html">Мої контакти</a></strong></em>
-                        </button>
-                        <br><br>
-                        <button>
-                            <strong><a href="main.html" style="margin-left:10px;">Мої захоплення</a></strong>
-                        </button>
-
-                    </center>
+                    <nav>
+                        <center>
+                            <button type="button">
+                                <em><strong><a href="contact.html">Мої контакти</a></strong></em>
+                            </button>
+                            <br><br>
+                            <button>
+                                <strong><a href="main.html" style="margin-left:10px;">Мої захоплення</a></strong>
+                            </button>
+                        </center>
+                    </nav>
+                    <!-- кнопки із посиланнями на інші сторінки я помістив у HTML-елемент <nav>, який являє собою розділ сторінки, 
+                        метою якого є надання навігаційних посилань у межах поточного документа або до інших документів.  -->
                 </td>
             </tr>
         </table>
     </center>
+    <nav style="display: flex; justify-content: space-between;">
+        <!-- задав display: flex, що означає, що дочірні елементи будуть поводитись які флекси, і коли я задав 
+            justify-content: space-between вони розмістились на однаковій відстані один від одного навіть при зміні розміру екрана-->
+        <a style="font-weight: 700; text-decoration: none;" href="box1.html">Блоки
+            div. Завдання 1</a>
+        <a style="font-weight: 700; text-decoration: none;" href="box2.html">Блоки div. Завдання
+            2</a>
+        <a style="font-weight: 700; text-decoration: none;" href="box3.html">Блоки div. Завдання
+            3</a>
+        <a style="font-weight: 700; text-decoration: none;" href="box4.html">Блоки div. Завдання
+            4</a>
+        <a style="font-weight: 700; text-decoration: none;" href="box5.html">Блоки div. Завдання 5</a>
+        <a style="font-weight: 700; text-decoration: none;" href="responsive-flex.html">Завдання 4.2</a>
+        <a style="font-weight: 700; text-decoration: none;" href="parallax.html">Завдання 4.3</a>
+    </nav>
+    <!-- теги із посиланнями на інші сторінки я також помістив у HTML-елемент <nav>, який являє собою розділ сторінки, 
+        метою якого є надання навігаційних посилань у межах поточного документа або до інших документів.  -->
 </body>
 
 </html>
