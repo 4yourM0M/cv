@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт</title>
+    <style>
+        .box {
+            width: 800px;
+        }
+
+        /* задав розмір блоку для перших п'ятьох елементів */
+
+        .box-up {
+            display: inline-block;
+            width: 100px;
+            height: 150px;
+            margin-left: 10px;
+            padding: 10px;
+            background-color: #eeeff2;
+            border-left: 10px #D0D0FF dotted;
+            font-size: 40px;
+        }
+
+        /* змінив display для елементу <p> на блочний та розмістив їх в один рядок.
+        Задав ширину та висоту, задній колір фону, границю, внутрішній та зовнішній відступи, розмір тексту в <p> */
+
+        .box-up:hover {
+            background-color: yellow;
+            color: goldenrod;
+            cursor: pointer;
+        }
+
+        /* ховер ефект. При наведені мишки на елемент із класом box-up буде змінюватись курсив на покажчик, 
+        задній фон та колір тексту будуть змінюватись на інші кольори */
+
+        .box-down {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 150px;
+            margin-left: 10px;
+            padding: 10px;
+            background-color: #eeeff2;
+            border-left: 10px #D0D0FF dashed;
+            font-size: 40px;
+        }
+
+        /* змінив позиціонування для елементу <p> на фіксоване та розмістив його внизу сторінки у правому кутку.
+        Задав ширину та висоту, задній колір фону, границю, внутрішній та зовнішній відступи, розмір тексту в <p> */
+
+        .box-down:hover {
+            background-color: yellow;
+            color: goldenrod;
+            cursor: pointer;
+        }
+
+        /* ховер ефект. При наведені мишки на елемент із класом box-down буде змінюватись курсив на покажчик, 
+        задній фон та колір тексту будуть змінюватись на інші кольори */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="box-up">A</p>
+        <p class="box-up">B</p>
+        <p class="box-up">C</p>
+        <p class="box-up">D</p>
+        <p class="box-up">E</p>
+    </div>
+    <div class="box-down">F</div>
+</body>
+
+</html>

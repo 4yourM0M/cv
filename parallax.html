@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        /* задав висоту HTML елементам та body*/
+
+        body {
+            margin: 0;
+        }
+
+        .background-one {
+
+            background-image: url('parall.jpg');
+            /* фото, що буде на задньому фоні */
+            height: 100%;
+            background-attachment: fixed;
+            /* фіксую фото */
+            background-position: center;
+            /* розміщую по центрі */
+            background-repeat: no-repeat;
+            /* вимикаю дублювання фото-фону */
+            background-size: cover;
+            /* задаю розмір */
+        }
+
+        .background-two {
+
+            background-image: url('codddd.jpg');
+            /* фото, що буде на задньому фоні */
+            height: 100%;
+            background-attachment: fixed;
+            /* фіксую фото */
+            background-position: center;
+            /* розміщую по центрі */
+            background-repeat: no-repeat;
+            /* вимикаю дублювання фото-фону */
+            background-size: cover;
+            /* задаю розмір */
+        }
+
+        img {
+            position: absolute;
+            left: 80%;
+            top: 40%;
+            width: 15%;
+            height: 30%;
+            border-radius: 50%;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-one"></div>
+    <!-- елемент із заднім фоном -->
+    <img src="xxtenations-1.jpg" alt="">
+    <!-- експерментував із двома елементами, які треба проскролити -->
+    <div> ПРОКРУЧУЮ СТОРІНКУ І МІНЯЄТЬСЯ ФОН</div>
+    <div class="background-two"></div>
+    <!-- ще один елемент із заднім фоном, який доповнює ефект паралаксу. -->
+    
+</body>
+
+</html>

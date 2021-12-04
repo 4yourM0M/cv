@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій сайт</title>
+    <style>
+        .basis {
+            width: 600px;
+        }
+
+        /* задав розмір блоку так, щоб кожний дочірний елемент розміщувався від нижнього кутка наступного блоку */
+
+        .one {
+            background-color: aqua;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 10px solid black;
+        }
+
+        /* додав границю */
+
+        .justify-content-1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .two {
+            background-color: mediumspringgreen;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 20px solid black;
+        }
+
+        /* додав границю */
+
+        .justify-content-2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .three {
+            background-color: lightpink;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 10px solid black;
+        }
+
+        /* додав границю */
+
+        .justify-content-3 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .text {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        /* задав розмір та жирність тексту */
+    </style>
+</head>
+
+<body>
+    <div class="basis">
+        <div class="justify-content-1">
+            <div class="one">
+                <center>
+                    <p>#1</p>
+                </center>
+                <!-- розташував елемент <p> по центру -->
+                <p class="text">I am <br> Vova.</p>
+                <!-- розмістив наступний текст з нового рядка за допомогою <br> -->
+                <p>I love studing</p>
+            </div>
+        </div>
+        <div class="justify-content-2">
+            <div class="two">
+                <center>
+                    <p>#2</p>
+                </center>
+            </div>
+        </div>
+        <div class="justify-content-3">
+            <div class="three">
+                <center>
+                    <p>#3</p>
+                </center>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flex</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: lavenderblush;
+        }
+
+        /* для всієї сторінки сайту забрав зовнішні відступи, які були за замовчуванням
+        додав завдній фон (колір) */
+
+        .background {
+            width: 100%;
+            background-image: url(aley.jpg);
+            background-size: 100% 867px;
+            box-sizing: border-box;
+            color: white;
+            height: 867px;
+            padding: 10px;
+        }
+
+        /* в елемент div задав стиль заднього фото-фону 
+        задав ширину заднього фону на 100% сторінки та висоту самої фотографії за допомогою background-size
+        border-box я задав, щоб враховувались відступи в задані розміри
+        задав висоту елемента div, щоб відображалась ціла фотографія заднього фону
+        задав колір тексту*/
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: lemonchiffon;
+        }
+
+        /* сontent sectioning елементу nav задав флекс поведінку та за допомогою
+          justify-content та align-items розмістив навігаційні (кнопки із посиланнями) елементи з однаковою
+          відстанню один від одного та по центру відповідно*/
+
+        a {
+            text-decoration: none;
+        }
+
+        /* забрав нижнє підкреслення в <a> */
+
+        .logo {
+            font-size: 45px;
+            border: 1px solid orange;
+            margin: 0 5px;
+            color: black;
+        }
+
+        /* розмір, границя, зовнішній відступ та колір тексту */
+
+
+        .menushka {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            margin: 0 5px;
+        }
+
+        /* поведінка флекс, однакові відступи дочірніх елементів, ширина батьківського елементу  */
+
+        header {
+            margin-top: 150px;
+        }
+
+        /* верхній зовнішній відступ елемента <header> */
+
+        .styles-words {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: cursive;
+        }
+
+        /* розмір, нижній зовн. відступ та курсивний шрифт */
+
+        .styles-words_2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            font-family: sans-serif;
+        }
+
+        /* розмір, нижній зовн. відступ та шрифт */
+
+        .styles-words_3 {
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        /* розмір, шрифт */
+
+        section {
+            width: 90%;
+            margin-bottom: 80px;
+        }
+
+        /* ширина відносно сторінки та нижній відступ */
+
+        .size-half-section {
+            width: 400px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        /* ширина та відступи */
+
+        img {
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        /* розмір фото над статтею та заокруглення кутів */
+
+        .article {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* ширина батьківського елементу, де розміщенні дві статті
+        за допомогою флекс поведінки розмістив в один ряд із відступом дочірніх елементів */
+
+        .mini-article {
+            width: 300px;
+        }
+
+        /* ширина дочірніх елементів */
+
+        .text-fontsize-2 {
+            font-size: 14px;
+        }
+
+        /* розмір тексту */
+
+        .div-prefooter {
+            font-family: sans-serif;
+            font-size: 14px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: rgb(255, 219, 152);
+        }
+
+        /* шрифт, розмір тексту, висота елементу, висота лінії для тексту, розміщення по центру, колір заднього фону */
+
+        footer {
+            font-weight: bold;
+            height: 100px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 14px;
+            font-family: sans-serif;
+            background-color: rgb(255, 203, 107);
+        }
+
+        /* жирність, розмір тексту, шрифт, висота елементу, висота лінії для тексту, розміщення по центру, колір заднього фону */
+
+
+        @media screen and (max-width: 800px)
+
+        /* адаптивність. Стилі, які я задав у цьому at-правилі будуть змінені, коли розмір екрана буде менший за 800px */
+            {
+            .logo {
+                font-size: 30px;
+            }
+
+            .menushka {
+                width: 400px;
+            }
+
+            .styles-words {
+                font-size: 24px;
+            }
+
+            .styles-words_2 {
+                font-size: 44px;
+            }
+
+            .styles-words_3 {
+                font-size: 18px;
+            }
+
+            section {
+                width: 100%;
+            }
+
+            .size-half-section {
+                width: 90%;
+            }
+
+            .text-fontsize {
+                font-size: 20px;
+            }
+
+            img {
+                width: 90%;
+            }
+
+            .article {
+                width: 100%;
+            }
+
+            .mini-article {
+                width: 90%;
+            }
+
+            .text-fontsize-2 {
+                font-size: 22px;
+            }
+
+            .div-prefooter {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 22px;
+            }
+
+        }
+
+        @media screen and (max-width: 580px)
+
+        /* адаптивність. Стилі, які я задав у цьому at-правилі будуть змінені, коли розмір екрана буде менший за 580px */
+            {
+            nav {
+                display: block;
+                height: 36px;
+            }
+
+            .logo {
+                font-size: 30px;
+                text-align: center;
+                color: orangered;
+                margin-bottom: 20px;
+            }
+
+            .menushka {
+                width: 100%;
+                margin: 0;
+                justify-content: space-around;
+            }
+
+            .div-prefooter {
+                font-size: 14px;
+                padding: 10px;
+                line-height: 10px;
+            }
+
+            footer {
+                font-size: 18px;
+            }
+
+        }
+
+        @media screen and (max-width: 335px)
+
+        /* адаптивність. Стилі, які я задав у цьому at-правилі будуть змінені, коли розмір екрана буде менший за 335px */
+            {
+            .styles-words_2 {
+                font-size: 35px;
+            }
+
+            .text-fontsize-2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="background">
+            <nav>
+                <div>
+                    <div class="logo">Назва лого</div>
+                </div>
+                <div>
+                    <div class="menushka">
+                        <button><a href="">Кнопка</a></button>
+                        <button><a href="">Кнопка</a></button>
+                        <button><a href="">Кнопка</a></button>
+                        <button><a href="">Кнопка</a></button>
+                    </div>
+                </div>
+            </nav>
+            <center>
+                <header>
+                    <div class="styles-words">Деяка інформація на тему сайту, можливо підзаголовок</div>
+                    <div class="styles-words_2"><strong>Деяка інформація на тему сайту, наприклад, заголовок</strong>
+                    </div>
+                    <div class="styles-words">Ще якась інформація на тему сайту, можливо другий підзаголовок</div>
+                    <div class="styles-words">Ще інформація на тему сайту</div>
+                    <div class="styles-words_3">Якийсь текст</div>
+                </header>
+            </center>
+        </div>
+    </div>
+    <center>
+        <section>
+            <div class="size-half-section">
+                <h1>Заголовок статті чи розділу (тобто секції будь-якого роду)</h1>
+                <p class="text-fontsize">Текст статті(наприклад) <br> Поміщу рандомний набір букв: Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Repudiandae delectus suscipit sequi nobis magni, eligendi
+                    temporibus pariatur. Doloribus adipisci aut saepe quasi magnam! Ipsa necessitatibus labore facere
+                    vitae unde voluptates quia delectus expedita optio, ducimus odio possimus molestias autem a cum
+                    quibusdam placeat voluptas at velit perferendis nisi recusandae libero asperiores earum. Cumque
+                    similique quas hic repellendus earum at voluptatum saepe delectus, dolorum placeat maxime omnis?
+                    Dolore iste cumque, repellendus tempora facilis corporis laborum officiis reiciendis, quaerat
+                    praesentium quia unde eligendi alias sequi temporibus, sit omnis quod eos explicabo fugit et
+                    tenetur! Recusandae, aliquam ipsam officia suscipit sed fugit minus perspiciatis. Dignissimos
+                    repudiandae voluptas soluta neque et distinctio sapiente nulla, eos dolorem inventore esse numquam
+                    natus quis reprehenderit sint libero ex minima, velit vitae obcaecati! Minima vero voluptas placeat
+                    unde hic quo provident, doloribus molestias delectus accusantium nam quibusdam nemo deserunt nihil
+                    modi natus, officiis voluptate adipisci quisquam. Temporibus, ex.</p>
+            </div>
+            <div class="article">
+                <div class="mini-article">
+                    <img src="column-1-autumn.jpg" alt="">
+                    <h3>Заголовок наступної статті</h3>
+                    <div class="text-fontsize-2">Текст статті(наприклад) <br> Поміщу рандомний набір букв: Lorem ipsum
+                        dolor sit
+                        amet consectetur, adipisicing elit. Repudiandae delectus suscipit sequi nobis magni, eligendi
+                        temporibus pariatur. Doloribus adipisci aut saepe quasi magnam! Ipsa necessitatibus labore
+                        facere
+                        vitae unde voluptates quia delectus expedita optio, ducimus odio possimus molestias autem a cum
+                        quibusdam placeat voluptas at velit perferendis nisi recusandae libero asperiores earum. Cumque
+                        similique quas hic repellendus a, eos dolorem inventore esslectus expedita optio, ducimus odio
+                        possimus molestias autem a cum
+                        quibusdam placeat voluptas at velit perferendis nisi recusandae libero asperiores earum. Cumque
+                        similique quas hic repellendus a, eos dolorem inventore esse numlectus expedita optio, ducimus
+                        odio possimus molestias autem a cum
+                        quibusdam placeat voluptas at velit perferendis nisi recusandae libero asperiores earum. Cumque
+                        similique quas hic repellendus a, eos dolorem inventore esse
+                        natus quis reprehenderit sint libero electus expedita optio, ducimus odio possimus molestias
+                        autem a cum
+                        quibusdam placeat voluptas at velit perferendis nisi recusandae libero asperiores earum. Cumque
+                        similique quas hic repellendus a, eos dolorem inventore esse numquam
+                        natus quis reprehenderit sint libero ex minima, velit vitae obcaecati! Minima vero voluptas
+                        placeat
+                        unde hic quo provident, doloribus molestias delectus accusantium nam quibusdam nemo deserunt
+                        nihil
+                        modi natus, officiis voluptate adipisci quisquam. Temporibus, ex.</div>
+                </div>
+                <div class="mini-article">
+                    <img src="column-2-autumn.jpg" alt="">
+                    <h3>Заголовок наступної статті</h3>
+                    <div class="text-fontsize-2">Текст статті(наприклад) <br> Поміщу рандомний набір букв: Lorem ipsum
+                        dolor sit
+                        amet consectetur, adipisicing elit. Repudiandae delectus suscipit sequi nobis magni, eligendi
+                        temporibus pariatur. Doloribus adipisci aut saepe quasi magnam! Ipsa necessitatibus labore
+                        facere
+                        vitae unde voluptates quia delectus it sed fugit minus perspiciatis. Dignissimos
+                        repudiandae voluptas soluta neque et distinctio sapiente <br><br> nulla, eos dolorem inventore
+                        esse numquam
+                        natus quis reprehenderit sint libero ex mini Temporibus,ma, velit vitae obcaecati! Minima vero
+                        voluptas placeat
+                        unde hic quo provident, doloribus molestias delectus accusantium nam quibusdam nemo deserunt
+                        nihil
+                        modi natus, officiis voluptate adipisci quisquam. ex.</div>
+                </div>
+            </div>
+        </section>
+    </center>
+    <div class="div-prefooter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repudiandae.</div>
+    <footer>1.12.2021p.</footer>
+
+</body>
+
+</html>
