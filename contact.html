@@ -4,46 +4,67 @@
 <head>
   <meta charset="utf-8">
   <title>Мій сайт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- задав адаптивність сайту -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img2.jpg">
+  <!-- іконка перед назвою сайту -->
   <style>
     label {
       font-size: 18px;
     }
 
-    h2{
+    h2 {
       background: #F5DEB3;
     }
   </style>
 </head>
 
 <body>
-
-  <h1 class="line" style="
+  <header>
+    <h1 class="line" style="
     color: #134D; 
     /* розкоментував стилізацію inline CSS для демонстрації специфікації */
     background-color:#1211;">
-    <!-- змінив колір тексту і фону -->
-    Контакти
-    <hr size="3" color="black">
-  </h1>
-  <h2>
-    Номер Телефону</h2>
-  <h3 style="font-size:21px; margin-top:-20px">+380674110234</h3>
-  <h2>
-    Електронна пошта</h2>
-  <h3 style="font-size:21px; margin-top:-20px">vovtet@gmail.com</h3>
-  <h2>
-    Discord</h2>
-  <h3 style="font-size:21px; margin-top:-20px">Vova_Molodetsky #0888</h3>
-  <form action="mailto:vovterer@gmail.com" method="POST" enctype="text/plain">
-    <label for="">Your name:</label>
-    <input style="background-color: lightseagreen;" type="text" name="yourName"><br>
-    <label for="">Your email:</label>
-    <input style="background-color: yellow;" type="email" name="yourEmail"><br>
-    <label for="">Your message:</label><br>
-    <textarea name="yourMessage" id="textarea1" cols="30" rows="10"></textarea>
-    <input type="submit">
-  </form>
+      <!-- змінив колір тексту і фону -->
+      Контакти
+      <hr size="3" color="black">
+    </h1>
+  </header>
+  <!--  додав заголовок в елемент HTML <header>, який представляє вступний вміст, як правило, групу вступних або навігаційних засобів. Він може містити деякі елементи заголовка, але 
+        також логотип, форму пошуку, ім’я автора та інші елементи.  -->
+  <section>
+    <h2 style="border-left: 5px dotted rgb(255, 203, 113);">Номер Телефону</h2>
+    <!-- зробив ліву границю -->
+    <h3 style="font-size:21px; margin-top:-20px">+380674110234</h3>
+    <!-- зовнішній відступ -->
+  </section>
+  <!-- загальний окремий розділ сторінки. -->
+  <section>
+    <h2 style="border-left: 5px dotted rgb(255, 203, 113);">Електронна пошта</h2>
+    <!-- зробив ліву границю -->
+    <h3 style="font-size:21px; margin-top:-20px">vovtet@gmail.com</h3>
+    <!-- зовнішній відступ -->
+  </section>
+  <!-- загальний окремий розділ сторінки. -->
+  <section>
+    <h2 style="border-left: 5px dotted rgb(255, 203, 113);">Discord</h2>
+    <!-- зробив ліву границю -->
+    <h3 style="font-size:21px; margin-top:-20px">Vova_Molodetsky #0888</h3>
+  </section>
+  <!-- загальний окремий розділ сторінки. -->
+  <section>
+    <form action="mailto:vovterer@gmail.com" method="POST" enctype="text/plain">
+      <label for="">Your name:</label>
+      <input style="background-color: lightseagreen;" type="text" name="yourName"><br>
+      <label for="">Your email:</label>
+      <input style="background-color: yellow;" type="email" name="yourEmail"><br>
+      <label for="">Your message:</label><br>
+      <textarea name="yourMessage" id="textarea1" cols="30" rows="10"></textarea>
+      <input type="submit">
+    </form>
+  </section>
+  <!-- загальний окремий розділ сторінки. -->
 </body>
 
 </html>
