@@ -56,9 +56,20 @@
             height: 30%;
             border-radius: 50%;
         }
-        p{
+
+        p {
             text-align: center;
         }
+
+        @media screen and (max-width: 1024px) {
+
+            .background-one,
+            .background-two {
+                background-attachment: scroll;
+            }
+        }
+
+        /* вимкнув паралакс  */
     </style>
 </head>
 
@@ -70,7 +81,7 @@
     <div> ПРОКРУЧУЮ СТОРІНКУ І МІНЯЄТЬСЯ ФОН</div>
     <div class="background-two"></div>
     <!-- ще один елемент із заднім фоном, який доповнює ефект паралаксу. -->
-    
+
 </body>
 
 </html>
